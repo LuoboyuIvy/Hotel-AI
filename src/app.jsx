@@ -16,6 +16,7 @@ import "./app.sass";
 //   require('nerv-devtools')
 // }
 
+
 const store = {
   counterStore
 };
@@ -29,7 +30,14 @@ class App extends Component {
   componentDidMount () {}
 
   config = {
+
+
     pages: [
+      //'pages/Dates/dates',
+      //'pages/Bookdetail/bookDetail',
+
+      'pages/Reservation/reservation',
+
       'pages/account/account',
       'pages/ActivityService/activityService',
       'pages/CustomerService/index',
@@ -53,13 +61,15 @@ class App extends Component {
         pagePath: "pages/index/index",
         text: "首页"
       },{
+        pagePath: "pages/Reservation/reservation",
+        text: "预定"
+      },{
         pagePath: "pages/CustomerService/index",
         text: "客服"
       },{
         pagePath: "pages/ActivityService/activityService",
         text: "活动"
-      },
-      {
+      },{
         pagePath: "pages/account/account",
         text: "我的"
       }
